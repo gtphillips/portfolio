@@ -1,0 +1,13 @@
+body {
+  font-family: roboto sans-serif;
+  color: $mainBlue;
+  font-weight: 300;
+
+  @mixin atMedium{
+	color: green;
+  }
+
+  @mixin atLarge{
+    color: orange;
+  }
+}
