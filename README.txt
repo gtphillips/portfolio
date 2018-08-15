@@ -51,3 +51,21 @@ or
   set up a .gitignore file before commit
    git push origin branchName
 
+>Create branches
+   git checkout -b branchName
+
+>Merge branches
+   >change to master
+   git merge branchName
+or
+   git merge branchName -no-ff (no auto conflict merging, shows in log on github)
+
+>Delete no longer needed branches
+   git -d branchName
+
+>Pull branch from Github
+   git pull origin branchName
+   >do this regularly when working in teams to avoid conflicts
+   >use same spacing style to avoid conflicts
+   >communicate which sections you are working on to avoid overlaps
+

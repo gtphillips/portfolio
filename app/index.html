@@ -3,15 +3,15 @@
 <head>
   <!-- viewport set-up -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
+
   <!-- import fonts -->
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-  
-  <title>Example page</title>
-  
-  <!--meta data set-up for SEO-->
-  <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel">
-  <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
+
+  <title>Gregory Phillips - Web Developer</title>
+
+  <!--meta data for SEO-->
+  <meta name="keywords" content="">
+  <meta name="description" content="">
 
 <!-- usemin build blocks: specify output dir for compiled css and js-->
   <!-- build:css assets/styles/styles.css -->
@@ -21,18 +21,165 @@
   <!-- build:js assets/scripts/Vendor.js -->
   <script  src="/temp/scripts/Vendor.js"></script>
   <!-- endbuild -->
-  
-  </head>
+</head>
 
-<body>
-<h1>Default page</h1>
-<p>Ready to build... let's go!</p>
-<div class="site-section__exampleSelector">JS Test</div>
+  <body>
 
+  <header class="site-header">
+    <div class="wrapper">
+
+        <img src="assets/images/logo.png">
+        <h1>GREGORY PHILLIPS</h1>
+        <h2>WEB DEVELOPER</h2>
+
+
+      <div class="site-header__menu-icon"></div>
+
+      <div class="site-header__menu-content">
+        <nav class="primary-nav primary-nav-pull-right">
+          <ul>
+            <li><a href="#portfolio" id="portfolio-link">Portfolio</a></li>
+            <li><a href="#profile" id="profile-link">Profile</a></li>
+            <li><a href="#contact" id="contact-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="large-hero">
+    <picture>
+      <source srcset="assets/images/hero--large.png 1920w" media="(min-width: 1380px)">
+      <source srcset="assets/images/hero--medium.png 1380w" media="(min-width: 990px)">
+      <source srcset="assets/images/hero--small.png 990w" media="(min-width: 640px)">
+      <img class="large-hero__image" srcset="assets/images/hero--smaller.png 640w" alt="Blurred desk with laptop and coffee mug.">
+    </picture>
+    <div class="large-hero__text-content">
+      <div class="wrapper">
+        <h1 class="large-hero__title">Front-end Web Developer.</h1>
+        <p class="large-hero__description">Graduate Web Developer looking to kick-start career in web development. Experienced with wide range of technologies across the full Agile development cycle. Specialised in Front-end technologies and WordPress.</p>
+        <p><a href="#contact" class="btn btn--blue btn--large">Hire me</a>
+        <a href="#portfolio" class="btn btn--grey btn--large">View Portfolio</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="portfolio" class="page-section" data-matching-link="#portfolio-link">
+    <div class="wrapper">
+      <div class="portfolio-item">
+        <img src="assets/images/clear-view-thumb.png">
+        <div class="portfolio-item__description">
+          <h1 class="portfolio-item__title">Clear View Escapes</h1>
+          <p class="portfolio-item__description">Professional development project through the 15.5 hour course: "Git a Web Developer Job: Mastering the Modern Workflow" on udemy.com. The course has a strong focus on modern workflow tools and best practices from markup and styling, to page optimisation and workflow automation.</p>
+          <h3 class="portfolio-item__description-list-title">Features developed and skills gained:</h3>
+          <ul class="portfolio-item__description-list">
+            <li class="portfolio-item__description-list-item">Git source control using GitHub</li>
+            <li class="portfolio-item__description-list-item">Workflow automation with Gulp and BrowserSync</li>
+            <li class="portfolio-item__description-list-item">Manipulation of Node.js and NPM</li>
+            <li class="portfolio-item__description-list-item">CSS architecture and BEM best practices</li>
+            <li class="portfolio-item__description-list-item">Modular, object-oriented JavaScript best practices</li>
+            <li class="portfolio-item__description-list-item">Mobile first development</li>
+            <li class="portfolio-item__description-list-item">CSS animations and adding flare with JS</li>
+            <li class="portfolio-item__description-list-item">Automated build tools with code and image compression</li>
+            <li class="portfolio-item__description-list-item">Legacy browser support for responsive images and JavaScript content</li>
+          </ul>
+          <ul class="portfolio-item__skills-list">
+            <li class="portfolio-item__skill">PostCSS</li>
+            <li class="portfolio-item__skill">BEM Standards</li>
+            <li class="portfolio-item__skill">Gulp</li>
+            <li class="portfolio-item__skill">Workflow Automation</li>
+            <li class="portfolio-item__skill">NPM</li>
+            <li class="portfolio-item__skill">GIT</li>
+            <li class="portfolio-item__skill">GitHub</li>
+          </ul>
+        </div> <!--end of portfolio-item__description-->
+      </div> <!--end of portfolio-item-->
+
+      <div class="portfolio-item">
+        <img src="assets/images/university-thumb.png">
+        <div class="portfolio-item__description">
+          <h1 class="portfolio-item__title">Fictional University</h1>
+          <p class="portfolio-item__description">Professional development project through the 26 hour course: "Become a Wordpress Developer: Unlocking Power Through Code" on udemy.com.</p>
+          <h3 class="portfolio-item__description-list-title">Features developed and skills gained:</h3>
+          <ul class="portfolio-item__description-list">
+            <li class="portfolio-item__description-list-item">Wordpress theme development best practices</li>
+            <li class="portfolio-item__description-list-item">Creating custom post types and Custom fields</li>
+            <li class="portfolio-item__description-list-item">Creating relationships between post types</li>
+            <li class="portfolio-item__description-list-item">Leveraging the Wordpress REST API with custom queries and endpoints</li>
+            <li class="portfolio-item__description-list-item">A live search feature powered by JavaScript</li>
+            <li class="portfolio-item__description-list-item">User accounts with open registration</li>
+            <li class="portfolio-item__description-list-item">Bespoke and customisable user roles with permissions control</li>
+            <li class="portfolio-item__description-list-item">User created content "My Notes" feature and "like" system for professors</li>
+            <li class="portfolio-item__description-list-item">Google Maps integration with campus locations</li>
+          </ul>
+          <ul class="portfolio-item__skills-list">
+            <li class="portfolio-item__skill">WordPress</li>
+            <li class="portfolio-item__skill">PHP</li>
+            <li class="portfolio-item__skill">JavaScript</li>
+            <li class="portfolio-item__skill">Google Maps</li>
+            <li class="portfolio-item__skill">Professional Development</li>
+            <li class="portfolio-item__skill">Online Course</li>
+          </ul>
+        </div> <!--end of portfolio-item__description-->
+      </div> <!--end of portfolio-item-->
+    </div> <!--end of wrapper-->
+  </div>
+
+  <div id="profile" class="page-section" data-matching-link="#profile-link">
+    <div class="wrapper">
+      <h1>GREGORY PHILLIPS</h1>
+      <div class="slide">
+        <h2 class="slide__title">Who am I?</h2>
+        <p class="slide__content">
+          A BSc Computing and Games Development graduate, well versed in Object Oriented Programming, Web development and best coding practice.Experienced delivering solutions for assessment across a broad sectrum of languages and platforms including C#, Java and web dev technologies.</p>
+      </div>
+      <div class="slide">
+        <h2 class="slide__title">What can I do?</h2>
+        <p class="slide__content">
+          Successfully deliver solutions both individually and as part of team. Participate in multiple roles: Project manager, Lead and contribution programmer, Asset creator and Presentation spokesperson.</p>
+      </div>
+      <div class="slide">
+        <h2 class="slide__title">What can I use?</h2>
+        <p class="slide__content">
+          I have worked with a variety of technologies, recently training to specialise in web development, with a particular interest in front-end technologies.</p>
+      </div>
+      <div class="slide">
+        <h2 class="slide__title">Experience: JET Programme</h2>
+        <p class="slide__content">
+          Post-grad0uation I spent two years participating in the JET Programme, working as an Assistant Language Teacher for a private senior high school in Tokyo. This was a fantastic opportunity that granted me the chance to experience another culture, learn a second language, and drastically build upon my confidence, organisational and communication skills through working in a professional environment.</p>
+      </div>
+      <div class="slide">
+        <h2 class="slide__title">My Ethos?</h2>
+        <p class="slide__content">
+          I have an ever-growing passion for web design and development. I believe it is one of few areas within computing where problem-solving and logical thinking overlap with creativity and imagination. These are two strengths I am proud to have and eager to use.</p>
+      </div>
+      <div class="slide">
+        <h2 class="slide__title">My Goal.</h2>
+        <p class="slide__content">To dive into an engaging and challenging career in web development. To achieve this I have been building competence and familiarity with web technologies since returning by solving real world problems, creating tools to use and to share with others, developing a more focused portfolio in the process.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="page-section" data-matching-link="#contact-link">
+    <div class="wrapper">
+      <h1>CONTACT</h1>
+      <p>I am currently looking for employment.</p>
+      <p>Available for immediate start, based in Dorset, UK.</p>
+      <a href="#">Email</a>
+      <p>I'll do my best to respond withing a day.</p>
+      <p>Please contact me only regarding relevant employment opportunities, thank you.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Powered by Tea, Created by me.</p>
+    <p>&copy; 2018</p>
+  </footer>
 
 <!-- end of body scripts -->
   <!-- build:js assets/scripts/App.js -->
   <script  src="/temp/scripts/App.js"></script>
   <!-- endbuild -->
 </body>
+
 </html>

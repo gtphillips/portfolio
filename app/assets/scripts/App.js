@@ -1,4 +1,4 @@
 import $ from "jquery";
-import Example from "./modules/Example";
+import SmoothScroll from "./modules/SmoothScroll";
 
-var example = new Example();
+var smoothScroll = new SmoothScroll();
