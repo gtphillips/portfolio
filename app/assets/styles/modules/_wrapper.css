@@ -1,10 +1,9 @@
 .wrapper {
   padding-left: 18px;
   padding-right: 18px;
-  max-width: 1236px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
 
   &--narrow {
     max-width: 796px;

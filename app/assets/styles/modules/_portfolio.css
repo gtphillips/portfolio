@@ -1,8 +1,19 @@
 .portfolio {
   background-color: #1C1C1C;
   color: #FFF;
+  padding-top: 4rem;
 
   &__item {
+    position: relative;
     background-color: $mainGrey;
+    width: 100%;
+  }
+
+  &__item__title {
+    background-color: $mainGrey;
+    z-index: 2;
+    position: absolute;
+    top: 80%;
+    text-align: center;
   }
 }
