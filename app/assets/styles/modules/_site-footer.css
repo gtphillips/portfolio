@@ -1,0 +1,19 @@
+.footer {
+  background-color: $mainGreen;
+  width: 100%;
+  color: $darkTeal;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 0.4rem 0;
+
+  &__tagline {
+    margin: .5rem 0 0 0;
+    padding: 0;
+  }
+
+  &__copyright {
+    margin: 0 0 0.3rem 0;
+    padding: 0;
+  }
+}

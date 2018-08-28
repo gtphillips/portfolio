@@ -9,21 +9,31 @@
 
   &__text-content {
     position: absolute;
-    padding-top: 3rem;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
     width: 100%;
-    text-align: left;
+    text-align: center;
   }
 
   &__title {
     color: #FFF;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+
+    @mixin atMedium {
+      font-size: 4rem;
+    }
   }
 
   &__description {
     color: #FFF;
+    font-size: .9rem;
     font-weight: 300;
+    text-shadow: 1px 1px $mainGrey;
+
+    @mixin atMedium {
+      font-size: 1.4rem;
+    }
   }
 }

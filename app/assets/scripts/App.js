@@ -1,4 +1,6 @@
 import $ from "jquery";
-import SmoothScroll from "./modules/SmoothScroll";
+import StickyHeader from "./modules/StickyHeader";
+import MobileMenu from "./modules/MobileMenu";
 
-var smoothScroll = new SmoothScroll();
+var stickyHeader = new StickyHeader();
+var mobileMenu = new MobileMenu();
